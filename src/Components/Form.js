@@ -34,14 +34,6 @@ const Form = ({paciente, setPaciente}) => {
         .then(res => res.text())
         .then(res => console.log(res))
 
-        //reiniciando state de paciente
-        setPaciente({
-            nombre: '',
-            apellido: '',
-            dni: 0,
-            celular: 0
-        })
-
 
 
     }
