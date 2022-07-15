@@ -15,6 +15,14 @@ import FooterLogin from './Components/FooterLogin';
 function App() {
   const {isAuthenticated} = useAuth0()
 
+
+  const [paciente, setPaciente] = useState({
+    nombre: '',
+    apellido: '',
+    dni: 0,
+    celular: 0
+  })
+
   const [filter, setFilter] = useState("")
 
   const [pacientes, setPacientes] = useState([]) 
