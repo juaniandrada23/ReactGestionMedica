@@ -1,0 +1,21 @@
+.log {
+    color: black;
+    font-family: Sans-Serif;
+  }
+
+.fila{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.caja{
+  padding-top: 20px;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
