@@ -30,7 +30,7 @@ const Form = ({paciente, setPaciente}) => {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(paciente)
         }
-        fetch('http://localhost:9000/api', requestInit)
+        fetch('https://apimedicina.herokuapp.com/api', requestInit)
         .then(res => res.text())
         .then(res => console.log(res))
 

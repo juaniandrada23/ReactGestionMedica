@@ -28,7 +28,7 @@ const FormRevision = ({revision, setRevision}) => {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(revision)
         }
-        fetch('http://localhost:9000/api1/', requestInit)
+        fetch('https://apimedicina.herokuapp.com/api1/', requestInit)
         .then(res => res.text())
         .then(res => console.log(res))
 

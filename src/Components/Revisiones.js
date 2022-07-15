@@ -8,7 +8,7 @@ const Revisiones = ({revisiones, filter, setListUpdated}) => {
         const requestInit = {
             method: 'DELETE'
         }
-        fetch('http://localhost:9000/api1/' + numeroRevision, requestInit)
+        fetch('https://apimedicina.herokuapp.com/api1/' + numeroRevision, requestInit)
         .then(res => res.text())
         .then(res => console.log(res))
     

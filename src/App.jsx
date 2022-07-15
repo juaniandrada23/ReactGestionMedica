@@ -33,7 +33,7 @@ function App() {
 
   useEffect(() => {
     const getPacientes = () => {
-      fetch('http://localhost:9000/api')
+      fetch('https://apimedicina.herokuapp.com/api')
       .then(res => res.json())
       .then(res => setPacientes(res))
     }
@@ -43,7 +43,7 @@ function App() {
 
   useEffect(() => {
     const getRevisiones = () => {
-      fetch('http://localhost:9000/api1')
+      fetch('https://apimedicina.herokuapp.com/api1')
       .then(res => res.json())
       .then(res => setRevisiones(res))
     }

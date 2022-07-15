@@ -29,7 +29,7 @@ function Turnos() {
 
     useEffect(() => {
         const getServisios = () => {
-            fetch('http://localhost:9000/api1')
+            fetch('https://apimedicina.herokuapp.com/api1')
             .then(res => res.json())
             .then(res => setRevisiones(res))
         }

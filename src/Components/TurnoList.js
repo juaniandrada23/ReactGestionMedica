@@ -11,7 +11,7 @@ const TurnoList = ({pacientes, setPaciente, paciente, setListUpdated, filter}) =
         const requestInit = {
             method: 'DELETE'
         }
-        fetch('http://localhost:9000/api/' + idpacientes1, requestInit)
+        fetch('https://apimedicina.herokuapp.com/api/' + idpacientes1, requestInit)
         .then(res => res.text())
         .then(res => console.log(res))
 
@@ -30,7 +30,7 @@ const TurnoList = ({pacientes, setPaciente, paciente, setListUpdated, filter}) =
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(paciente)
         }
-        fetch('http://localhost:9000/api/' + idpacientes1, requestInit)
+        fetch('https://apimedicina.herokuapp.com/api/' + idpacientes1, requestInit)
         .then(res => res.text())
         .then(res => console.log(res))
 
@@ -50,7 +50,7 @@ const TurnoList = ({pacientes, setPaciente, paciente, setListUpdated, filter}) =
         const requestInit = {
             method: 'GET'
         }
-        fetch('http://localhost:9000/api1/' + idpacientes1, requestInit)
+        fetch('https://apimedicina.herokuapp.com/api1/' + idpacientes1, requestInit)
         .then(res => res.json())
         .then(res => console.log(res))
 

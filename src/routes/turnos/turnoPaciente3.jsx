@@ -17,7 +17,7 @@ function TurnosID3() {
     useEffect(() => {
         
         const getServisios = () => {
-            fetch(`http://localhost:9000/api1/3`) 
+            fetch(`https://apimedicina.herokuapp.com/api1/3`) 
             .then(res => res.json())
             .then(res => setRevs(res))
         }
